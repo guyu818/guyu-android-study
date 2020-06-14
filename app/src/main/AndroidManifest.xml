@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.study.guyu.androidstudy"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 设置Internet权限才可以加载网络图片 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 设置外部存储权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"> <!-- 这一行的将所有页面标题取消了 -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.UiActivity"
+            android:label="UI组件学习">
+        </activity>
+        <activity android:name=".storage.StorageActivity">
+        </activity>
+        <activity android:name=".event.EventActivity">
+        </activity>
+        <activity android:name=".animation.AnimationActivity">
+        </activity>
+        <activity android:name=".activity.ActActivity">
+        </activity>
+        <activity android:name="ripple.RippleActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.TextViewActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.ButtonActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.EditTextActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.RadioButtonActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.CheckBoxActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.ScrollViewActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.ImageViewActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.listview.ListViewActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.gridview.GridViewActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.recyclerview.RecyclerViewActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.WebViewActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.ToastActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.AlertDialogActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.DialogActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.ProgressActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.PopUpWindowActivity">
+        </activity>
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity android:name=".ui.uiitem.recyclerview.lin_recy.linearRecyclerViewActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.recyclerview.hor_recy.HorRecyclerViewActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.recyclerview.grid_recy.GridActivity">
+        </activity>
+        <activity android:name=".ui.uiitem.recyclerview.pu_recy.PuRecyActivity">
+        </activity>
+        <activity android:name=".activity.AActivity">
+        </activity>
+        <activity android:name=".activity.BActivity">
+            <intent-filter>
+                <action android:name="com.guyu.test.BActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".fragment.ContainerActivity">
+        </activity>
+        <activity android:name=".event.HandlerActivity">
+        </activity>
+        <activity android:name=".storage.SharedPreferenceActivity">
+        </activity>
+        <activity android:name=".storage.FileActivity">
+        </activity>
+        <activity android:name=".storage.FileOutActivity">
+        </activity>
+        <activity android:name=".broadcast.BroadActivity">
+        </activity>
+        <activity android:name=".broadcast.Broad2Activity">
+        </activity>
+        <activity android:name=".YiQingActivity">
+        </activity>
+    </application>
+
+</manifest>

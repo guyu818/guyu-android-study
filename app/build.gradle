@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.study.guyu.androidstudy"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenLocal() //加上这一行是为了，直接在本地的仓库中去找相应的jar包，而找不到则取中央仓库中寻找
+    maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'https://maven.aliyun.com/repository/jcenter'}
+    mavenCentral()
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    //加载第三方网络图片
+    //compile'com.github.bumptech.glide:4.0.0'
+    //apply plugin: 'announce'
+    //这里出问题显示没有这个函数
+    //annotationProcessor'com.github,bumptech.glide:compiler:4.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+
+
+    //下面的依赖包支持recyclerview
+    //这里的21.0.3是和v7相对应的
+    compile 'com.android.support:recyclerview-v7:21.0.3'
+    //compile 'com.android.support-v7:design:21.0.3'
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:padding="10dp">
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这是一个简单的text view"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        />
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="这是一个显示不了，用...来表示的一个textview"
+        android:ellipsize="end"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="文字加icon"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:paddingRight="150dp"
+        android:drawableLeft="@drawable/ic_arrow_down"
+        />
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="text view中划线去锯齿的"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="text view下划线"
+        android:textColor="@color/colorYellow"
+        android:background="@drawable/text_underline"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="走马灯走马灯走马灯走马灯走马灯走马灯走马灯走马灯走马灯"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+    <TextView
+        android:id="@+id/tv_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用settext函数设置的text内容text view"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用settext函数中HTML设置的text view"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        />
+
+
+</LinearLayout>
